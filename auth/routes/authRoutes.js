@@ -78,4 +78,13 @@ router.post("/register", async (req, res) => {
   }
 });
 
+// Logout
+router.post("/logout", (req, res) => {
+
+  res.json({
+    success: true,
+    message: "Logout berhasil. Silakan hapus token di client."
+  });
+});
+
 module.exports = router;

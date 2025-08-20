@@ -6,7 +6,7 @@ const app = express();
 
 const cors = require('cors');
 app.use(cors({
-  origin: 'http://127.0.0.1:8000', // atau '*' untuk semua origin
+  origin: 'http://127.0.0.1:8000', 
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
